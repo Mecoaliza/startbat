@@ -14,40 +14,40 @@ O script é dividido em uma classe principal TaskSchedulerApp e inclui os seguin
 
 ### **__init__(self, root, task_list)**
 
-    Inicializa a interface gráfica.
-    Configura a janela principal (root) e a lista de tarefas (task_list).
-    Define o layout da interface gráfica com o uso da biblioteca PySimpleGUI.
-    Chama o método schedule_tasks() para agendar as tarefas.
+- Inicializa a interface gráfica.
+- Configura a janela principal (root) e a lista de tarefas (task_list).
+- Define o layout da interface gráfica com o uso da biblioteca PySimpleGUI.
+- Chama o método schedule_tasks() para agendar as tarefas.
 
 ### **schedule_tasks(self)**
 
-    Utiliza a biblioteca schedule para agendar a execução das tarefas diariamente nos horários especificados na lista de tarefas.
+- Utiliza a biblioteca schedule para agendar a execução das tarefas diariamente nos horários especificados na lista de tarefas.
 
 ### **run_schedule()**
 
-    Executa a verificação contínua das tarefas agendadas em uma thread separada.
+- Executa a verificação contínua das tarefas agendadas em uma thread separada.
 
 ### **execute_task(self, horario)**
 
-    Calcula o tempo restante para a execução da próxima tarefa.
-    Chama o método update_progress() para exibir a barra de progresso e atualizar o status da tarefa.
+- Calcula o tempo restante para a execução da próxima tarefa.
+- Chama o método update_progress() para exibir a barra de progresso e atualizar o status da tarefa.
 
 ### **update_progress(self, horario, remaining_time)**
 
-    Atualiza a barra de progresso simulando o avanço da tarefa.
-    Chama o método update_next_task() quando a tarefa é concluída.
+- Atualiza a barra de progresso simulando o avanço da tarefa.
+- Chama o método update_next_task() quando a tarefa é concluída.
 
 ### **update_next_task(self, next_task)**
 
-    Atualiza o status da tarefa concluída na interface gráfica.
+- Atualiza o status da tarefa concluída na interface gráfica.
 
 ### **get_remaining_time(self, task_time)**
 
-    Calcula o tempo restante até a próxima execução da tarefa.
+- Calcula o tempo restante até a próxima execução da tarefa.
 
 ### **format_time(self, remaining_time)**
 
-    Formata o tempo restante em minutos e segundos para exibição.
+- Formata o tempo restante em minutos e segundos para exibição.
 
 ## Utilização
 
