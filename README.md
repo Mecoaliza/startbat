@@ -1,5 +1,7 @@
 # Task Scheduler App
 
+![Getting Started](1.png)
+
 ## Introdução
 
 Este script Python implementa um aplicativo de agendamento de tarefas utilizando a biblioteca schedule para agendamento, a biblioteca tkinter para a GUI e a PySimpleGUI para a barra de progresso e interação do usuário.
